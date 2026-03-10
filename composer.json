@@ -1,0 +1,40 @@
+{
+    "name": "psc-acme/guard-invoice",
+    "description": "Package guard-invoice for psc-acme organization",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\GuardInvoice\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "nette/utils": "^4.0",
+        "doctrine/orm": "^3.0",
+        "carbon/carbon": "^3.0",
+        "symfony/event-dispatcher": "^7.0",
+        "symfony/messenger": "^7.0",
+        "psr/log": "^3.0"
+    },
+    "require-dev": {
+        "fakerphp/faker": "^1.0"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
